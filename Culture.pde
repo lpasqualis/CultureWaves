@@ -206,7 +206,11 @@ class Culture {
                  m_zoom.left();
               }
             } else {
-              m_selectedWaveGenerator.m_speed-=(m_shiftIsPressed)? 0.10 : 0.01;
+              if (!m_commandIsPressed) {
+                m_selectedWaveGenerator.m_speed-=(m_shiftIsPressed)? 0.10 : 0.01;
+              }  else {
+                m_selectedWaveGenerator.m_interval-=(m_shiftIsPressed)? 0.01 : 0.001;
+              }
             }
             break;
             
@@ -218,7 +222,11 @@ class Culture {
                 m_zoom.right();
               }
             } else {
-              m_selectedWaveGenerator.m_speed+=(m_shiftIsPressed)? 0.10 : 0.01;
+              if (!m_commandIsPressed) {
+                m_selectedWaveGenerator.m_speed+=(m_shiftIsPressed)? 0.10 : 0.01;
+              }  else {
+                m_selectedWaveGenerator.m_interval+=(m_shiftIsPressed)? 0.01 : 0.001;
+              }
             }
             break;
             

@@ -100,9 +100,10 @@ class Member extends WaveGenerator {
           if (!noDistraction) {
             String a1="Speed="+String.format("%.2f",m_speed);
             String a2="Amp="+String.format("%.2f",m_amp);
-            textToWrite+="\n"+a1+"\n"+a2;
+            String a3="Interval="+String.format("%.2f",m_interval*100);
+            textToWrite+="\n"+a1+"\n"+a2+"\n"+a3;
             textWidth=max(m_name.length(),a1.length(),a2.length());
-            textLines+=2;
+            textLines+=3;
             labelWidth=80*distanceFactor;
             labelHeight *= textLines*1.2;
           }
@@ -115,7 +116,7 @@ class Member extends WaveGenerator {
       
       float labelX = 0.0;
       float labelY = 0.0;
-      float labelZ = min(min(m_amp,200)*0.2 + maxHeight/2,100) + (60*(distanceFactor-1));
+      float labelZ = min(min(m_amp,200)*0.2 + maxHeight/2,100) + (60*(distanceFactor-1))+10;
   
       color sphereColor;
       color labelColor;

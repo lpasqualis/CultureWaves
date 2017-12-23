@@ -1,19 +1,21 @@
 # Culture Waves
+By Lorenzo Pasqualis - http://www.coderhood.com
 
-Processing sketch designed to generate and render wave interference patters. It is intended to visualize the analogy between such patterns in and the culture of a company. Each wave generator is given a random first name and visualized on the image. Wave generators can be dragged around the image, added, erased, etc. The wave pattern can be visualized in 3D or 2D in many different color schemas. The view can be rotated round the X axis.
+Processing sketch designed to generate and render wave interference patterns. It is intended to visualize the analogy between such patterns in and the culture of a company. Each wave generator is given a random first name and visualized on the image. Wave generators can be dragged around the image, added, erased, etc. The wave pattern can be visualized in 3D or 2D in many different color schemas. The view can be rotated around the X-axis.
 
 This sketch was written for the sole purpose of creating the imagery used [for an article about company culture on my CoderHood blog.](http://www.coderhood.com)
 
 Requires [Processing 3](https://processing.org/download/) to run.
 
-Author: Lorenzo Pasqualis
-
 ## How to Run CultureWaves
-Download and install [Processing 3](https://processing.org/download/). Load this sketch and run it. You'll see a basic interference with 5 generators. Press "i" to get a short list of commands that you can use (combination of mouse gestures and keys).
+1. Download and install [Processing 3](https://processing.org/download/).
+2. Load this sketch and run it. You'll see a basic interference with 5 generators.
+3. Press "i" to get a short list of commands that you can use (combination of mouse gestures and keys).
 
-See [Instructions.pde](https://github.com/lpasqualis/CultureWaves/blob/master/Instructions.pde) for more details.
+![](imgs/instructions.png)
 
-### Notes
+### Notes & Known Issues
+- Known issue with selection of members when the view is rotated. Will fix it as some point if anybody cares. It has to do with determining the model coordinates of a mouse click on the Z=0 plane.
 - You need a mouse with a wheel and a keyboard to run this properly.
 - This sketch is not mobile-friendly.
 - Instructions are **very** basic.
@@ -29,8 +31,6 @@ See [Instructions.pde](https://github.com/lpasqualis/CultureWaves/blob/master/In
 ### Static Screenshots:
 
 ![](imgs/BillAndJulie.png)
-
-![](imgs/instructions.png)
 
 ![](imgs/CleanGroup.png)
 
@@ -52,7 +52,7 @@ See [Instructions.pde](https://github.com/lpasqualis/CultureWaves/blob/master/In
 - Press [SHIFT]+[Mouse wheel] to rotate.
 - Press [H] to toggle hide members.
 - Press [COMMAND/WIN/META]+[S] to save the wave.
-- Press [COMMAND/WIN/META]+[L] to load the wave.
+- Press [COMMAND/WIN/META]+[L] to load a wave.
 - Press [I] to get more instructions.
 
 

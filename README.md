@@ -3,7 +3,7 @@ By Lorenzo Pasqualis - http://www.coderhood.com
 
 Processing sketch designed to generate and render wave interference patterns. It is intended to visualize the analogy between such patterns in and the culture of a company. Each wave generator is given a random first name and visualized on the image. Wave generators can be dragged around the image, added, erased, etc. The wave pattern can be visualized in 3D or 2D in many different color schemas. The view can be rotated around the X-axis.
 
-This sketch was written for the sole purpose of creating the imagery used [for an article about company culture on my CoderHood blog.](http://www.coderhood.com)
+This sketch was written for the sole purpose of creating the imagery used [for an article about company culture on my CoderHood blog.](https://www.coderhood.com/visualizing-company-culture-and-cultural-change/)
 
 Requires [Processing 3](https://processing.org/download/) to run.
 
